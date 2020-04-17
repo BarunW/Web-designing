@@ -1,0 +1,138 @@
+<!Doctype html>
+<html>
+<head>
+	<title>
+		Gold Gym
+	</title>
+	<link rel="stylesheet" type="text/css" href="./home.css">
+</head>
+<body>
+</div>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="backgd.jpg" style="width:100%;height: 700px">
+  <div class="topbody">
+  <div href='./home'>Home</div>
+  <div href='./About'style="padding-left: 15px;">About</div>
+  <div href='./Contacts'style="padding-left: 15px">Contacts</div>
+  <div href='./Gallery'style="padding-left: 15px"><a style="text-decoration: none; color: white" href="./gallery.html">Gallery</a></div>
+</div>
+  <div class="text"> <p style="color: white; font-size: 40px;font-family:Comic Sans MS">Join us Now<br>Fitness and Sport</p> </div>
+
+</div>
+
+<div class="mySlides fade">
+  <img src="pic1.jpg" style="width:100%;height: 700px">
+   <div class="topbody">
+  <div href='./home'>Home</div>
+  <div href='./About'style="padding-left: 15px;">About</div>
+  <div href='./Contacts'style="padding-left: 15px">Contacts</div>
+  <div href='./Gallery'style="padding-left: 15px">Gallery</div>
+</div>
+  <div class="text"> <p style="color: white; font-size: 40px;font-family:Comic Sans MS">Join us Now<br>Fitness and Sport</p> </div>
+</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="pic2.jpg" style="width:100%;height: 700px">
+   <div class="topbody">
+  <div href='./home'>Home</div>
+  <div href='./About'style="padding-left: 15px;">About</div>
+  <div href='./Contacts'style="padding-left: 15px">Contacts</div>
+  <div href='./Gallery'style="padding-left: 15px">Gallery</div>
+</div>
+  <div class="text"> <p style="color: white; font-size: 40px;font-family:Comic Sans MS">Join us Now<br>Fitness and Sport</p> </div>
+</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<div class="proText">
+	<h1 style="padding-top:10px">CHOOSE YOUR PROGRAM</h1>
+	<p>Our Crossfit experts can help you discover new training techniques and
+	 exercises that offer a dynamic and efficient full-body workout</p>
+</div>
+<div class="chooseProgram">
+  <div class="programbanner">
+   <h1>CROSSFIT LEVEL 1</h1>
+   <p>Sufferers around the globe will be happy to hear that there are sleep apnea remedies.</p>
+  </div>
+    <div class="programbanner1">
+   <h1>BOOTCAMP</h1>
+   <p>The oil, also called linseed oil, has many industrial uses – it is an important ingredient</p>
+  </div>
+    <div class="programbanner2">
+   <h1>ENERGY BLAST</h1>
+   <p>It is a very common occurrence like cold or fever depending upon your lifestyle.</p>
+  </div>
+    <div class="programbanner3">
+   <h1>CLASSIC BODY BALANCE</h1>
+   <p>The procedure is usually a preferred alternative to photorefractive keratectomy,</p>
+  </div>
+</div>
+
+	<div class="planbanner">
+<div class="banner">
+	 <h2>Starter</h2>
+	 <p> Silver Plan <br>   800 per Month  or 8500 anually</p>
+	 <p> Gold Plan <br>   1100 per Month  or 23500 anually</p>
+      <button>Get Started</button>
+	</div>
+	<div class ="banner">
+	 <h2>Professional</h2>
+	 <p> Silver Plan <br>   800 per Month  or 8500 anually</p>
+	 <p> Gold Plan <br>   1100 per Month  or 23500 anually</p>
+	   <button>Get Started</button>
+	</div>
+	<div class="banner">
+	 <h2>Advance</h2>
+	 <p> Silver Plan <br>   800 per Month  or 8500 anually</p>
+	 <p> Gold Plan <br>   1100 per Month  or 23500 anually</p>
+     <button>Get Started</button>
+	</div>
+	</div>
+<script>
+
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</htm>
