@@ -149,8 +149,9 @@ button{
 .proText {
   text-align: center;
   font-family: arial;
-background-color: green;
+background-color: black;
 height: 200px;
+color : white;
 }
 .chooseProgram{
   display: flex;
